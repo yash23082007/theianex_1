@@ -16,11 +16,11 @@ export default function CommandPalette() {
     { id: 'timeline', label: 'Go to Education Timeline', category: 'Navigation', icon: <Hash size={16} />, action: () => scrollToSection('#timeline') },
     { id: 'achievements', label: 'Go to Achievements', category: 'Navigation', icon: <Hash size={16} />, action: () => scrollToSection('#achievements') },
     { id: 'contact', label: 'Go to Contact', category: 'Navigation', icon: <Hash size={16} />, action: () => scrollToSection('#contact') },
-    
+
     { id: 'github', label: 'Open GitHub Profile', category: 'Socials', icon: <Globe size={16} />, action: () => window.open('https://github.com/yash23082007', '_blank') },
     { id: 'linkedin', label: 'Open LinkedIn Profile', category: 'Socials', icon: <Globe size={16} />, action: () => window.open('https://www.linkedin.com/in/yash-vijay-b0a75937a', '_blank') },
     { id: 'instagram', label: 'Open Instagram Profile', category: 'Socials', icon: <Globe size={16} />, action: () => window.open('https://www.instagram.com/yash_vj23', '_blank') },
-    
+
     { id: 'resume', label: 'Download Resume PDF', category: 'Resume', icon: <FileText size={16} />, action: () => window.open('/resume-yash-vijay.pdf', '_blank') },
     { id: 'devtype', label: 'Open DevType typing speed app', category: 'Projects', icon: <ArrowRight size={16} />, action: () => window.open('https://dev-type-self.vercel.app', '_blank') },
     { id: 'mindcheck', label: 'Open MindCheck AI Depression Predictor', category: 'Projects', icon: <ArrowRight size={16} />, action: () => window.open('https://ai-depression-predictor.vercel.app', '_blank') },
@@ -95,8 +95,8 @@ export default function CommandPalette() {
   return (
     <>
       {/* Floating command prompt reminder */}
-      <button 
-        className="cmd-palette-trigger" 
+      <button
+        className="cmd-palette-trigger"
         onClick={() => setIsOpen(true)}
         aria-label="Open command palette"
       >
@@ -115,7 +115,7 @@ export default function CommandPalette() {
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
             />
-            
+
             <motion.div
               className="cmd-palette-modal"
               initial={{ opacity: 0, scale: 0.95, y: -20 }}

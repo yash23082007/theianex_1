@@ -102,7 +102,7 @@ export default function Navbar() {
               <FileText size={15} />
               <span>Resume</span>
             </a>
-            
+
             {/* Mobile Hamburger toggle */}
             <button
               className="mobile-menu-toggle"
@@ -126,7 +126,7 @@ export default function Navbar() {
               exit={{ opacity: 0 }}
               onClick={() => setMobileMenuOpen(false)}
             />
-            
+
             <motion.div
               className="mobile-menu-drawer"
               initial={{ x: '100%' }}
@@ -159,7 +159,7 @@ export default function Navbar() {
                     {link.label}
                   </a>
                 ))}
-                
+
                 <a
                   href="/resume-yash-vijay.pdf"
                   target="_blank"

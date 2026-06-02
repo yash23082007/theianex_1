@@ -9,7 +9,7 @@ export default function MagneticButton({ children, className = '', onClick, ...p
     const { left, top, width, height } = buttonRef.current.getBoundingClientRect();
     const x = e.clientX - (left + width / 2);
     const y = e.clientY - (top + height / 2);
-    
+
         gsap.to(buttonRef.current, {
       x: x * 0.35,
       y: y * 0.35,

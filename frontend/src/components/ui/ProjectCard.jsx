@@ -50,7 +50,7 @@ export default function ProjectCard({ project, index }) {
       style={{ '--project-color': projectColor }}
     >
       <div className="project-card-glow" style={{ background: `radial-gradient(circle at 50% 50%, ${projectColor}15, transparent 70%)` }} />
-      
+
       <div className="card-header">
         <span className="project-number" style={{ color: projectColor }}>
           {project.emoji ? `${project.emoji} ` : ''}{formattedIndex}

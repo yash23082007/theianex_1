@@ -28,12 +28,12 @@ export default function Timeline() {
             const isLeft = index % 2 === 0;
 
             return (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className={`timeline-item ${isLeft ? 'left' : 'right'}`}
               >
                 {/* Node dot on the line */}
-                <motion.div 
+                <motion.div
                   className="timeline-node"
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}

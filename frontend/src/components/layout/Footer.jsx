@@ -27,38 +27,38 @@ export default function Footer() {
           <div className="footer-nav-side">
             <h4 className="footer-side-title">Connect & Explore</h4>
             <div className="footer-social-links">
-              <a 
-                href={profile.githubUrl} 
-                target="_blank" 
-                rel="noreferrer" 
-                aria-label="GitHub Profile" 
+              <a
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub Profile"
                 className="footer-social-icon clickable"
               >
                 <FaGithub size={18} />
               </a>
-              <a 
-                href={profile.linkedinUrl} 
-                target="_blank" 
-                rel="noreferrer" 
-                aria-label="LinkedIn Profile" 
+              <a
+                href={profile.linkedinUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn Profile"
                 className="footer-social-icon clickable"
               >
                 <FaLinkedin size={18} />
               </a>
-              <a 
-                href={profile.instagramUrl} 
-                target="_blank" 
-                rel="noreferrer" 
-                aria-label="Instagram Profile" 
+              <a
+                href={profile.instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram Profile"
                 className="footer-social-icon clickable"
               >
                 <FaInstagram size={18} />
               </a>
-              <a 
-                href={profile.hackerrankUrl} 
-                target="_blank" 
-                rel="noreferrer" 
-                aria-label="HackerRank Profile" 
+              <a
+                href={profile.hackerrankUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="HackerRank Profile"
                 className="footer-social-icon clickable"
               >
                 <Trophy size={16} />

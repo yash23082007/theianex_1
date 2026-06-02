@@ -24,7 +24,7 @@ import './App.css';
 export default function App() {
   const [loading, setLoading] = useState(true);
 
-  
+
   useEffect(() => {
     // Disable smooth scroll on touch devices to improve native scrolling
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -63,7 +63,7 @@ export default function App() {
       {/* Dynamic Scroll Progress & Cursor overlays */}
       <ScrollProgress />
       <CustomCursor />
-      
+
       {/* Intro Curtain Loader */}
       <AnimatePresence mode="wait">
         {loading && (
@@ -87,7 +87,7 @@ export default function App() {
                 <span className="intro-logo">YV</span>
                 <span className="intro-logo-dot" />
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="loader-bar"
                 initial={{ width: 0 }}
                 animate={{ width: 140 }}

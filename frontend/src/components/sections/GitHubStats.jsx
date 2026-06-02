@@ -52,18 +52,18 @@ export default function GitHubStats() {
         >
           <div className="calendar-header-meta">
             <span className="calendar-title">Contribution Calendar</span>
-            <a 
-              href={`https://github.com/${username}`} 
-              target="_blank" 
-              rel="noreferrer" 
+            <a
+              href={`https://github.com/${username}`}
+              target="_blank"
+              rel="noreferrer"
               className="calendar-link"
             >
               @github/{username}
             </a>
           </div>
-          
+
           <div className="calendar-widget-wrapper">
-            <GitHubCalendar 
+            <GitHubCalendar
               username={username}
               fontSize={12}
               blockSize={12}
@@ -85,9 +85,9 @@ export default function GitHubStats() {
           >
             <div className="graphic-card-header">General Stats</div>
             <div className="graphic-image-wrapper">
-              <img 
-                src={statsUrl} 
-                alt={`${username} GitHub stats`} 
+              <img
+                src={statsUrl}
+                alt={`${username} GitHub stats`}
                 loading="lazy"
                 className="stats-svg-image"
                 onError={(e) => {
@@ -107,9 +107,9 @@ export default function GitHubStats() {
           >
             <div className="graphic-card-header">Top Languages</div>
             <div className="graphic-image-wrapper">
-              <img 
-                src={langsUrl} 
-                alt={`${username} top languages`} 
+              <img
+                src={langsUrl}
+                alt={`${username} top languages`}
                 loading="lazy"
                 className="stats-svg-image"
                 onError={(e) => {
@@ -129,9 +129,9 @@ export default function GitHubStats() {
           >
             <div className="graphic-card-header">Commit Streak</div>
             <div className="graphic-image-wrapper">
-              <img 
-                src={streakUrl} 
-                alt={`${username} commit streak`} 
+              <img
+                src={streakUrl}
+                alt={`${username} commit streak`}
                 loading="lazy"
                 className="stats-svg-image"
                 onError={(e) => {

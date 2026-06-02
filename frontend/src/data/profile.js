@@ -15,7 +15,7 @@
   hackerrankUrl: 'https://www.hackerrank.com/profile/yash23082007',
   avatarUrl: 'https://avatars.githubusercontent.com/u/230879230?v=4',
   email: 'ktanayash@gmail.com',
-  
+
   skills: {
     languages: [
       { name: "C",          level: 5, icon: "C" },

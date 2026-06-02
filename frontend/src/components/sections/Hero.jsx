@@ -22,7 +22,7 @@ export default function Hero() {
     useEffect(() => {
     let timer;
     const currentFullText = roles[roleIndex];
-    
+
     if (isDeleting) {
             timer = setTimeout(() => {
         setDisplayedRole(currentFullText.substring(0, displayedRole.length - 1));
@@ -54,7 +54,7 @@ export default function Hero() {
 
     const particles = [];
     const particleCount = Math.min(60, Math.floor((width * height) / 25000));
-    
+
         const mouse = {
       x: null,
       y: null,

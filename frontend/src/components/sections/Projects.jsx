@@ -67,7 +67,7 @@ export default function Projects() {
     const normalizedQuery = query.trim().toLowerCase();
 
     return projects.filter((project) => {
-            const categoryMatch = activeCategory === 'All' || 
+            const categoryMatch = activeCategory === 'All' ||
         (project.stack && project.stack.some(tech => tech.toLowerCase() === activeCategory.toLowerCase())) ||
         (activeCategory === 'AI/ML' && (project.name === 'MindCheck' || project.name === 'GoldenFace AI' || project.name === 'NeuralFlix')) ||
         (activeCategory === 'Developer Tool' && (project.name === 'DevType' || project.name === 'ExecuteX' || project.name === 'Caption Studio')) ||
@@ -121,7 +121,7 @@ export default function Projects() {
               className="project-search-input"
             />
           </div>
-          
+
           <div className="category-tabs" aria-label="Filter projects by category">
             {categories.map((cat) => (
               <button

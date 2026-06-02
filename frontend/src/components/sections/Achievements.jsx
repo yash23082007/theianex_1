@@ -22,16 +22,16 @@ export default function Achievements() {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
-              whileHover={{ 
-                y: -6, 
+              whileHover={{
+                y: -6,
                 borderColor: 'var(--accent)',
-                boxShadow: '0 12px 30px rgba(255, 77, 0, 0.08)' 
+                boxShadow: '0 12px 30px rgba(255, 77, 0, 0.08)'
               }}
-              transition={{ 
-                type: 'spring', 
-                stiffness: 150, 
+              transition={{
+                type: 'spring',
+                stiffness: 150,
                 damping: 12,
-                delay: index * 0.04 
+                delay: index * 0.04
               }}
             >
               <div className="achievement-icon-wrapper">

@@ -49,7 +49,7 @@ export default function About() {
                 }}
               />
               <div className="about-image-accent" />
-              
+
               {/* Overlay badges */}
               <div className="floating-badge badge-top">
                 <Code size={14} className="badge-icon" />
