@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  /* === LIGHT MODE === */
+  --bg-primary:     #F8F5F0;   /* warm off-white */
+  --bg-primary-rgb: 248, 245, 240;
+  --bg-secondary:   #EFEBE4;   /* soft cream */
+  --bg-secondary-rgb: 239, 235, 228;
+  --bg-card:        #FFFFFF;
+  --bg-card-rgb:    255, 255, 255;
+  --text-primary:   #0D0D0D;   /* near-black */
+  --text-secondary: #4A4A4A;
+  --text-muted:     #8A8A8A;
+  --accent:         #FF4D00;   /* electric orange — your signature color */
+  --accent-rgb:     255, 77, 0;
+  --accent-hover:   #CC3D00;
+  --accent-glow:    rgba(255, 77, 0, 0.15);
+  --border:         rgba(0, 0, 0, 0.08);
+  --card-shadow:    0 8px 32px rgba(0, 0, 0, 0.05);
+
+  --font-display: 'Syne', sans-serif;       /* Headlines, name */
+  --font-mono:    'DM Mono', monospace;     /* Code, tags, labels */
+  --font-body:    'DM Sans', sans-serif;    /* Body text */
+  
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  16px;
+  --space-4:  24px;
+  --space-5:  32px;
+  --space-6:  48px;
+  --space-7:  64px;
+  --space-8:  96px;
+  --space-9:  128px;
+}
+
+[data-theme="dark"] {
+  /* === DARK MODE === */
+  --bg-primary:     #080B0F;   /* deep space black */
+  --bg-primary-rgb: 8, 11, 15;
+  --bg-secondary:   #0F1419;   /* dark navy */
+  --bg-secondary-rgb: 15, 20, 25;
+  --bg-card:        #141920;   /* card dark */
+  --bg-card-rgb:    20, 25, 32;
+  --text-primary:   #F0EEE8;   /* warm white */
+  --text-secondary: #A8A8A8;
+  --text-muted:     #5A5A5A;
+  --accent:         #FF6B35;   /* slightly lighter orange for dark bg */
+  --accent-rgb:     255, 107, 53;
+  --accent-hover:   #FF8C5A;
+  --accent-glow:    rgba(255, 107, 53, 0.2);
+  --border:         rgba(255, 255, 255, 0.08);
+  --card-shadow:    0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Exception: don't transition animations themselves */
+.no-transition,
+.no-transition * {
+  transition: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Noise overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.035;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Hide default cursor on desktop when custom cursor is active */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, select, input[type="submit"], .clickable {
+    cursor: none;
+  }
+}
